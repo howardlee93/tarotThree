@@ -1,0 +1,13 @@
+
+.main{
+    /* height:auto;
+    text-align: center; */
+  margin: 0 5%;
+}
+  .reading{
+    /* display: flex;
+    flex-direction: row; */
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 2%;
+  }
