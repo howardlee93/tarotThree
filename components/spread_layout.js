@@ -31,12 +31,12 @@ export default function Spread({children}){ // will need to pass props in here
     }
 
     const meaningSpread = cards.map((card,i) =>
-      <Meaning_Card card={card} key={i} cardDir={dir} cardDes={card[dir]}/>
+      <Meaning_Card card={card} key={i} cardDir={dir}  cardDes={card[dir]}/> 
     )
       
     return(
         <div className={styles.main}> 
-          <button onClick={cardClick}>Shuffle the cards</button>
+          <p onClick={cardClick}>Shuffle the cards</p>
           <p> Click the cards to reveal your fate</p>
 
             <article className={styles.reading}>
