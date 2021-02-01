@@ -7,7 +7,15 @@ export async function CardHandler(){
   let thirdRand = Math.floor(Math.random() *76);
 
   let cards = card_data["cards"];
-  let cardsData = [].concat(cards[firstRand], cards[secondRand],cards[thirdRand]);
+
+  let firstCard = cards[firstRand];
+  let secondCard = cards.filter(card => card != cards[firstRand])[secondRand];
+  let thirdCard = cards.filter(card => card !== cards[firstRand] && card != secondCard)[thirdRand]
+
+  // let cardsData = [].concat(cards[firstRand], cards[secondRand],cards[thirdRand]);
+
+  let cardsData = [].concat(firstCard, secondCard, thirdCard);
+  
   return cardsData;
     
 };

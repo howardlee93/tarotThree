@@ -5,6 +5,8 @@ import React, { useState, useEffect } from 'react';
 
 import {CardHandler} from '../pages/api/card_id';
 
+import Image from 'next/image';
+
 //NOTE: string in props is only placeholder, will need to change to actual props later 
 
 export default function Spread({children}){ // will need to pass props in here
@@ -38,7 +40,7 @@ export default function Spread({children}){ // will need to pass props in here
           <p> Click the cards to reveal your fate</p>
 
             <article className={styles.reading}>
-              { cards ? meaningSpread : <div></div>}
+              { cards ? meaningSpread :<div/>}
             </article>
       
       </div>

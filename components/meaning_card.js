@@ -18,7 +18,7 @@ const Meaning_Card = ({card, cardDes, cardDir}) =>{
     }
     return(
         <div className={styles.container}>
-            <Image src={imgSrc} alt="me" width="200%" height="200%" onClick={cardClick}
+            <Image src={imgSrc} alt="me" width="200%" height="333%" onClick={cardClick}
             className={ cardDir == "meaning_up" ? "up" :  "reverse"}/>
                 <style jsx global>{`
                     .reverse {
