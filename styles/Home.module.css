@@ -1,5 +1,5 @@
 .container {
-  min-height: 100vh;
+  min-height: 50vh;
   padding: 0 0.5rem;
   display: flex;
   flex-direction: column;
@@ -8,12 +8,13 @@
 }
 
 .main {
-  /* padding: 3 rem 0; */
+  padding: 3 rem 0;
   flex: 1;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  margin: 1em;
 }
 
 .footer {
@@ -83,11 +84,13 @@
 
 .hero_image{
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../public/header.jpg");
-  width: 150%;
-  height: 150%;
+  width: 100vh;
+  height: 100%;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  position: relative;
+  /* position: relative; */
+  color: white;
+  padding: 1vh;
 }
 

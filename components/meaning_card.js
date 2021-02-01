@@ -6,11 +6,9 @@ import styles from '../styles/meaning.module.css';
 import Image from 'next/image';
 
 
-
 const Meaning_Card = ({card, cardDes, cardDir}) =>{
 
     const [toggled, setToggled] = useState(true);
-
 
     let imgSrc =  toggled ? '/back.jpg' : `/cards/${card.img}.jpg`;
 
@@ -19,7 +17,7 @@ const Meaning_Card = ({card, cardDes, cardDir}) =>{
         setToggled(!toggled);
     }
     return(
-        <div className="{styles.container}">
+        <div className={styles.container}>
             <Image src={imgSrc} alt="me" width="200%" height="200%" onClick={cardClick}
             className={ cardDir == "meaning_up" ? "up" :  "reverse"}/>
                 <style jsx global>{`

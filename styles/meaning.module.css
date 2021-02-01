@@ -3,5 +3,8 @@
     display: flex;
     flex-direction: column;
     width: auto;
+    padding: 2em;
+    margin: 2em;
+
 
 }

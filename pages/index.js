@@ -5,7 +5,6 @@ import {Footer} from '../components/footer';
 import Spread from '../components/spread_layout';
 
 
-
 export default function Home() {
 
 
@@ -18,12 +17,9 @@ export default function Home() {
 
       <main className={styles.main}>
         <div className={styles.hero_image}>
-        <h1 className={styles.title} className={styles.hero_text}>
+        <h1 className={styles.title} >
           What does your cards say today?
-
         </h1>
-        </div>
-
 
         <Link href='/about'>
           <a>About</a>
@@ -32,11 +28,7 @@ export default function Home() {
          <Link href='/learn'>
           <a>Learn more about the tarot</a>
          </Link>
-        
-        
-        <p className={styles.description}>
-          Generate a three card spread
-        </p>
+        </div>
 
         <Spread/>
 
